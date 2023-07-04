@@ -51,6 +51,14 @@ require("lazy").setup({
           require("nvim-autopairs").setup()
       end
   },
+  {
+      "kylechui/nvim-surround",
+      version = "*",
+      event = "VeryLazy",
+      config = function()
+          require("nvim-surround").setup()
+      end
+  },
   "sjl/badwolf",
   "tpope/vim-fugitive"
 })
