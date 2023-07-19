@@ -1,4 +1,4 @@
-vim.cmd("syntax enable")
+vim.o.updatetime = 50
 
 vim.o.shiftwidth = 4
 vim.o.tabstop = 4
@@ -37,10 +37,11 @@ vim.o.guicursor = "i:block"
 vim.o.shortmess = "filnxtToOFc"
 vim.o.showmode = false
 vim.o.colorcolumn = "80"
-vim.o.laststatus = 2
+vim.o.laststatus = 3
 vim.o.errorbells = false
 vim.o.hidden = true
 
+vim.g.loaded_python3_provider = 0
 vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0

@@ -75,6 +75,8 @@ local custom_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
   buf_set_keymap('n', '<leader>fm', '<cmd>lua vim.lsp.buf.format({ async=true })<CR>', opts)
+
+  client.server_capabilities.semanticTokensProvider = nil
 end
 
 local texlabBuildConfig = {}
