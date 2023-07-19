@@ -12,44 +12,73 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    "neovim/nvim-lspconfig",
-    {
-        "hrsh7th/nvim-cmp",
-        dependencies = {
-            "hrsh7th/cmp-nvim-lsp",
-            "hrsh7th/cmp-buffer",
-            "onsails/lspkind-nvim",
-            "saadparwaiz1/cmp_luasnip",
-        },
-        config = function()
-            require("configs/lspconfig")
-        end
-    },
-    {
-        "L3MON4D3/LuaSnip",
-        config = function()
-            require("configs/luasnip")
-        end
-    },
-    "nvim-lua/plenary.nvim",
-    "nvim-telescope/telescope.nvim",
-    {
-        "nvim-telescope/telescope-fzf-native.nvim",
-        config = function()
-          require("configs/telescope")
-        end,
-        build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --c onfig Release && cmake --install build --prefix build"
-    },
   {
-      "nvim-treesitter/nvim-treesitter",
-      build = ":TSUpdate"
+    "lewis6991/impatient.nvim",
+    config = function()
+      require("impatient")
+    end
+  },
+  "dstein64/vim-startuptime",
+  "neovim/nvim-lspconfig",
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "onsails/lspkind-nvim",
+      "saadparwaiz1/cmp_luasnip",
+    },
+    config = function()
+      require("configs/lspconfig")
+    end
   },
   {
-      "windwp/nvim-autopairs",
-      event = "VeryLazy",
-      config = function()
-          require("nvim-autopairs").setup()
-      end
+    "L3MON4D3/LuaSnip",
+    config = function()
+      require("configs/luasnip")
+    end
+  },
+  "nvim-lua/plenary.nvim",
+  "nvim-telescope/telescope.nvim",
+  {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    config = function()
+      require("configs/telescope")
+    end,
+    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --c onfig Release && cmake --install build --prefix build"
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    config = function()
+      require("configs/treesitter")
+    end,
+    build = ":TSUpdate"
+  },
+  {
+    "windwp/nvim-autopairs",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-autopairs").setup()
+    end
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup()
+    end
+  },
+  {
+    "j-hui/fidget.nvim",
+    tag = "legacy",
+    config = function()
+      require("fidget").setup{
+        text = {
+          done = ""
+        }
+      }
+    end
   },
   "sjl/badwolf",
   "tpope/vim-fugitive"
