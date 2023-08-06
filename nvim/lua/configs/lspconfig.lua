@@ -91,6 +91,16 @@ end
 local servers = {
   tsserver = true,
   cssls = true,
+  texlab = {
+    settings = {
+      texlab = {
+        build = {
+          args= { "-pdf", "-interaction=nonstopmode", "-synctex=0", "%f" }
+        }
+      }
+    }
+  },
+  pyright = true,
 }
 
 for server, config in pairs(servers) do
