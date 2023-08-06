@@ -1,3 +1,15 @@
+-- VIM GLOBAL OPTIONS --
+
+vim.g.loaded_python3_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- VIM OPTIONS --
+
 vim.o.updatetime = 50
 
 vim.o.shiftwidth = 4
@@ -41,9 +53,4 @@ vim.o.laststatus = 3
 vim.o.errorbells = false
 vim.o.hidden = true
 
-vim.g.loaded_python3_provider = 0
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
-vim.g.loaded_ruby_provider = 0
-
-vim.cmd.colorscheme("badwolf")
+vim.cmd.colorscheme("oxocarbon")

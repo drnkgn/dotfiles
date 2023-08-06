@@ -18,8 +18,27 @@ require("lazy").setup({
       require("impatient")
     end
   },
+  {
+    "stevearc/oil.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("oil").setup()
+    end
+  },
   "dstein64/vim-startuptime",
-  "neovim/nvim-lspconfig",
+  {
+    "neovim/nvim-lspconfig",
+    init = function()
+      -- credits to folke: https://github.com/folke/dot/blob/master/nvim/lua/plugins/lsp.lua
+      -- disable lsp watcher. Too slow on linux
+      local ok, wf = pcall(require, "vim.lsp._watchfiles")
+      if ok then
+        wf._watchfunc = function()
+          return function() end
+        end
+      end
+    end
+  },
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -51,8 +70,7 @@ require("lazy").setup({
     "nvim-treesitter/nvim-treesitter",
     config = function()
       require("configs/treesitter")
-    end,
-    build = ":TSUpdate"
+    end
   },
   {
     "windwp/nvim-autopairs",
@@ -72,6 +90,7 @@ require("lazy").setup({
   {
     "j-hui/fidget.nvim",
     tag = "legacy",
+    event = "LspAttach",
     config = function()
       require("fidget").setup{
         text = {
@@ -80,7 +99,15 @@ require("lazy").setup({
       }
     end
   },
-  "sjl/badwolf",
+  -- {
+  --   "Shatur/neovim-ayu",
+  --   config = function()
+  --     require("ayu").setup({
+  --       dark=true
+  --     })
+  --   end
+  -- },
+  "nyoom-engineering/oxocarbon.nvim",
   "tpope/vim-fugitive"
 })
 
