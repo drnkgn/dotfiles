@@ -91,6 +91,15 @@ end
 local servers = {
   tsserver = true,
   cssls = true,
+  rust_analyzer = {
+    settings = {
+      ["rust-analyzer"] = {
+        diagnostic = {
+          enable = false
+        }
+      }
+    }
+  },
   texlab = {
     settings = {
       texlab = {
