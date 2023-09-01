@@ -5,8 +5,6 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
     "*.css",
     "*.jsx",
     "*.tsx",
-    "*.js",
-    "*.ts",
     "*.vb",
     "*.lua",
     "*.tex",

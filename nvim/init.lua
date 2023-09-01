@@ -22,10 +22,15 @@ require("lazy").setup({
     "stevearc/oil.nvim",
     event = "VeryLazy",
     config = function()
-      require("oil").setup()
+      require("oil").setup({
+        columns = {
+          "permissions",
+          "size",
+          "mtime"
+        }
+      })
     end
   },
-  "dstein64/vim-startuptime",
   {
     "neovim/nvim-lspconfig",
     init = function()
