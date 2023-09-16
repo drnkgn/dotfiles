@@ -24,6 +24,7 @@ vim.o.list = true
 vim.o.listchars = "tab:| ,eol:⌅,precedes:…,extends:…,trail:·"
 
 vim.o.scrolloff = 10
+vim.o.sidescrolloff = 2
 vim.o.wrap = false
 vim.o.mouse = "nv"
 
@@ -44,7 +45,6 @@ end
 vim.o.background = "dark"
 vim.o.guicursor = "i:block"
 vim.o.shortmess = "filnxtToOFc"
-vim.o.showmode = false
 vim.o.colorcolumn = "80"
 vim.o.laststatus = 3
 vim.o.errorbells = false
