@@ -69,7 +69,7 @@ require("lazy").setup({
     config = function()
       require("configs/telescope")
     end,
-    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --c onfig Release && cmake --install build --prefix build"
+    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build"
   },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -104,15 +104,7 @@ require("lazy").setup({
       }
     end
   },
-  -- {
-  --   "Shatur/neovim-ayu",
-  --   config = function()
-  --     require("ayu").setup({
-  --       dark=true
-  --     })
-  --   end
-  -- },
-  "nyoom-engineering/oxocarbon.nvim",
+  "rebelot/kanagawa.nvim",
   "tpope/vim-fugitive"
 })
 

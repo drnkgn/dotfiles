@@ -27,6 +27,7 @@ vim.o.scrolloff = 10
 vim.o.sidescrolloff = 2
 vim.o.wrap = false
 vim.o.mouse = "nv"
+vim.o.mousemodel = "extend"
 
 vim.o.writebackup = false
 vim.o.swapfile = false
@@ -38,7 +39,7 @@ vim.o.completeopt = "menuone,noinsert,noselect"
 
 vim.cmd([[
 if (has("termguicolors"))
-    set termguicolors
+  set termguicolors
 end
 ]])
 
@@ -50,4 +51,4 @@ vim.o.laststatus = 3
 vim.o.errorbells = false
 vim.o.hidden = true
 
-vim.cmd.colorscheme("oxocarbon")
+vim.cmd.colorscheme("kanagawa")
