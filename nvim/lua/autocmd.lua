@@ -16,6 +16,15 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   end
 })
 
+vim.api.nvim_create_autocmd("TermOpen", {
+  group = vim.api.nvim_create_augroup("termnu", { clear = true }),
+  pattern = "*",
+  callback = function()
+    vim.wo.number = false
+    vim.wo.relativenumber = false
+  end
+})
+
 local latex = vim.api.nvim_create_augroup("latex", { clear = true})
 vim.api.nvim_create_user_command("TexOnSaveToggle", function()
   if vim.b.tex_onsave_state then

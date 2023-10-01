@@ -13,12 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
-    "lewis6991/impatient.nvim",
-    config = function()
-      require("impatient")
-    end
-  },
-  {
     "stevearc/oil.nvim",
     event = "VeryLazy",
     config = function()
@@ -104,8 +98,14 @@ require("lazy").setup({
       }
     end
   },
-  "rebelot/kanagawa.nvim",
-  "tpope/vim-fugitive"
+  "tpope/vim-fugitive",
+  "rktjmp/lush.nvim",
+
+  --- CUSTOM PLUGIN
+
+  {
+    dir = "~/dev/poser",
+  },
 })
 
 require("options")

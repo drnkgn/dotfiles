@@ -51,4 +51,4 @@ vim.o.laststatus = 3
 vim.o.errorbells = false
 vim.o.hidden = true
 
-vim.cmd.colorscheme("kanagawa")
+vim.cmd.colorscheme("poser")

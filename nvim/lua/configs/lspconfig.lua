@@ -87,7 +87,7 @@ else
 end
 
 local servers = {
-  tsserver = true,
+  -- tsserver = true,
   cssls = true,
   rust_analyzer = {
     settings = {
