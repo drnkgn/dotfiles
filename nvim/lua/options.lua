@@ -37,12 +37,6 @@ vim.o.incsearch = true
 vim.o.inccommand = "split"
 vim.o.completeopt = "menuone,noinsert,noselect"
 
-vim.cmd([[
-if (has("termguicolors"))
-  set termguicolors
-end
-]])
-
 vim.o.background = "dark"
 vim.o.guicursor = "i:block"
 vim.o.shortmess = "filnxtToOFc"
@@ -50,5 +44,7 @@ vim.o.colorcolumn = "80"
 vim.o.laststatus = 3
 vim.o.errorbells = false
 vim.o.hidden = true
+
+vim.o.termguicolors = true
 
 vim.cmd.colorscheme("poser")

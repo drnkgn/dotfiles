@@ -134,4 +134,4 @@ export NVM_DIR="$HOME/.nvm"
 PATH="$PATH:/usr/local/texlive/2023/bin/x86-64-linux:$HOME/software"
 
 # Windows path
-PATH="$PATH:/mnt/c/Windows"
+PATH="$PATH:/mnt/c/Windows:/mnt/c/Program Files/Alacritty"
