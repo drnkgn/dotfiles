@@ -87,6 +87,7 @@ else
 end
 
 local servers = {
+  clangd = true,
   tsserver = {
     tsserver = {
       useSyntaxServer = 'never'
