@@ -100,12 +100,7 @@ require("lazy").setup({
   },
   "tpope/vim-fugitive",
   "rktjmp/lush.nvim",
-
-  --- CUSTOM PLUGIN
-
-  {
-    dir = "~/dev/poser",
-  },
+  "drnkgn/poser-nvim",
 })
 
 require("options")
