@@ -1,0 +1,53 @@
+working_directory = "//wsl$/Mint/home/dkgn/"
+
+[colors]
+cursor = { text = "0x121212", cursor = "0xdedede" }
+
+[colors.primary]
+background = "0x121212"
+foreground = "0xdedede"
+
+[colors.bright]
+black = "0xbdbdbd"
+red = "0xffa1a1"
+green = "0xbddeab"
+yellow = "0xffdca0"
+blue = "0xb1d8f6"
+magenta = "0xfbdaff"
+cyan = "0x1ab2a8"
+white = "0xffffff"
+
+[colors.normal]
+black = "0x121212"
+red = "0xe27373"
+green = "0x94b979"
+yellow = "0xffba7b"
+blue = "0x97bedc"
+magenta = "0xe1c0fa"
+cyan = "0x00988e"
+white = "0xdedede"
+
+[font]
+size = 11.5
+
+[font.normal]
+family = "JetBrainsMonoNL Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMonoNL Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMonoNL Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMonoNL Nerd Font Mono"
+style = "Bold Italic"
+
+[window]
+dynamic_title = true
+
+[shell]
+program = "C:/Windows/system32/wsl.exe"
