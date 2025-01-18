@@ -31,20 +31,20 @@ white = "0xdedede"
 size = 11.5
 
 [font.normal]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "Comic Mono"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMonoNL Nerd Font Mono"
+family = "Comic Mono"
 style = "Bold"
 
-[font.italic]
-family = "JetBrainsMonoNL Nerd Font Mono"
-style = "Italic"
-
-[font.bold_italic]
-family = "JetBrainsMonoNL Nerd Font Mono"
-style = "Bold Italic"
+# [font.italic]
+# family = "JetBrainsMonoNL Nerd Font Mono"
+# style = "Italic"
+# 
+# [font.bold_italic]
+# family = "JetBrainsMonoNL Nerd Font Mono"
+# style = "Bold Italic"
 
 [window]
 dynamic_title = true
