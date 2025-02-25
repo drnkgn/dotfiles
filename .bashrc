@@ -128,10 +128,10 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 # WSL path
-PATH="$PATH:/usr/local/texlive/2023/bin/x86-64-linux:/usr/local/texlive/2023/bin/x86_64-linux:$HOME/software"
+PATH="$PATH:/usr/local/texlive/2023/bin/x86-64-linux:/usr/local/texlive/2023/bin/x86_64-linux:$HOME/software:$HOME/.local/bin"
 
 # Windows path
 PATH="$PATH:/mnt/c/Windows:/mnt/c/Program Files/Alacritty"
